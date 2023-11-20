@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Domain.School;
 
-namespace Domain.Student
+namespace Domain.School
 {
-    public class Student : Person.Person
+    public class School
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public School.School  School { get; set; }
+        public string current_milestone_id { get; set; }
     }
 }

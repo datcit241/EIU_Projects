@@ -1,5 +1,6 @@
 using Domain;
 using Domain.MockDomain;
+using Domain.School;
 using Domain.Student;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,7 @@ public class DataContext : IdentityDbContext<User>
     {
     }
     public DbSet<Student> Students { get; set; }
+    public DbSet<School> Schools { get; set; }
 
 
     public DbSet<MockDomain> MockDomains { get; set; }
